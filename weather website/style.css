@@ -1,0 +1,110 @@
+/* Reset and base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #e3f2fd;
+}
+
+h1, h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* ✅ Navigation Bar */
+nav {
+  background-color: #1976d2;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ✅ Main Content */
+main {
+  padding: 30px;
+}
+
+.search-bar {
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* ✅ Forecast Styles */
+.forecast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.forecast-day,
+.sun-times {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  width: 180px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ✅ Hourly Scroll */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 10px;
+}
+
+.horizontal-scroll div {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 100px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ✅ Footer */
+footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

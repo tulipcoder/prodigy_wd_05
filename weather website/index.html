@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App - Ranchi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navigation Menu -->
+  <nav>
+    <div class="logo">🌤 WeatherNow</div>
+    <ul class="nav-links">
+      <li><a href="#current">Current weather</a></li>
+      <li><a href="#hourly">hourly</a></li>
+      <li><a href="#sun">Sunrise/sunset</a></li>
+      <li><a href="#daily">3-day Forecast</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Main Weather Section -->
+  <main>
+    <h1>Weather Forecast</h1>
+
+    <div class="search-bar">
+      <input type="text" id="locationInput" placeholder="Enter location (e.g. Ranchi)" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <section id="current">
+      <h2>Current Weather</h2>
+      <div id="currentWeather" class="card"></div>
+    </section>
+
+    <section id="hourly">
+      <h2>Hourly Forecast</h2>
+      <div id="hourlyForecast" class="horizontal-scroll"></div>
+    </section>
+
+    <section id="daily">
+      <h2>3-Day Forecast</h2>
+      <div id="dailyForecast" class="forecast-grid"></div>
+    </section>
+
+    <section id="sun">
+      <h2>Sunrise & Sunset</h2>
+      <div id="sunTimes" class="forecast-grid"></div>
+    </section>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 WeatherNow. Built with ☀ by Harini.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
