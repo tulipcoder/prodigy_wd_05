@@ -1,4 +1,4 @@
-const apiKey = 'dcd99e9cacdb419997b41916250507'; // 🔁 Replace with your WeatherAPI key
+const apiKey = 'dcd99e9cacdb419997b41916250507'; 
 
 function getWeather() {
   const location = document.getElementById("locationInput").value.trim();
@@ -27,7 +27,7 @@ function displayWeather(data) {
   const current = data.current;
   const forecast = data.forecast.forecastday;
 
-  // ✅ Current Weather
+  //  Current Weather
   document.getElementById("currentWeather").innerHTML = `
     <p><strong>Location:</strong> ${data.location.name}, ${data.location.country}</p>
     <p><strong>Temperature:</strong> ${current.temp_c} °C / ${current.temp_f} °F</p>
@@ -39,7 +39,7 @@ function displayWeather(data) {
     <p><strong>Last Updated:</strong> ${current.last_updated}</p>
   `;
 
-  // ✅ Hourly Forecast
+  // Hourly Forecast
   let hourlyHtml = "";
   forecast[0].hour.forEach(hour => {
     const time = hour.time.split(" ")[1];
@@ -53,7 +53,7 @@ function displayWeather(data) {
   });
   document.getElementById("hourlyForecast").innerHTML = hourlyHtml;
 
-  // ✅ 3-Day Forecast
+  //  3-Day Forecast
   let dailyHtml = '';
   forecast.forEach(day => {
     dailyHtml += `
@@ -66,7 +66,7 @@ function displayWeather(data) {
   });
   document.getElementById("dailyForecast").innerHTML = dailyHtml;
 
-  // ✅ Sunrise & Sunset
+  //  Sunrise & Sunset
   let sunHtml = '';
   forecast.forEach(day => {
     sunHtml += `
